@@ -1,0 +1,59 @@
+body {font-family: "Lato", sans-serif;}
+.formDiv {
+    width: 100%;
+    background-color:#b4cdd0;
+    padding:30px;
+    height: 600px;
+}
+
+input[type=text], input[type=number], input[type=date], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], #cancel {
+    width: 30%;
+    background-color:#ffeb3b;
+    color: #000;
+    padding: 14px 20px;
+    float: right;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+th,td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+td{
+    text-align: left;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+form img{
+  padding: 10px 40% 10px 40%;
+
+}

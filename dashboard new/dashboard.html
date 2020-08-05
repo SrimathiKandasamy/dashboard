@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dashboardcss.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body onload="counts()">
+      
+<div class="main">
+<div class="row">
+    PROJECT <p id="project"></p>    
+</div>
+<div class="row">
+    DEPARTMENT <p id="department"></p>    
+</div>
+<div class="row">
+	EMPLOYEE <p id="employee"><i class="glyphicon glyphicon-user"></i></p>    
+</div>
+        
+</div>
+<script>
+function counts(){
+    employeeList = JSON.parse(localStorage.getItem("data"));
+    document.getElementById("employee").innerHTML = Object.keys( employeeList).length;
+    
+    projectList = JSON.parse(localStorage.getItem("proj"));
+    document.getElementById("project").innerHTML = Object.keys( projectList).length;
+
+    departmentList = JSON.parse(localStorage.getItem("dept1"));
+    document.getElementById("department").innerHTML = Object.keys( departmentList).length;
+    
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="departmentcss.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="main">
+    <h2>Department Details</h2>
+    <div class="department" id="department">
+        <table class="list" id="departmentList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id="response">
+            </tbody>
+        </table>
+        <button onclick="myfunction1()"  id="addDepartmentPopup">
+        <img src="add-user.png" width=20 height=20>Add Department</button>
+        <form  id="form" value="0" class="modal-content" autocomplete="off"> 
+            <img src="admin.png" width=100 height=100>       
+            <div class="container"> 
+                <div>
+                    <label>NAME:</label><span class="required">*</span><br>
+                    <input type="text" size=40 name="name"  id="name" placeholder="Enter department name" pattern="[A-Z 
+                    a-z]{5,30}" title="enter min 5 or max 30 characters" >
+                    </div>
+                    <div>
+                    <label>DESCRIPTION:</label><span class="required">*</span>
+                    <textarea class="descrip" name="description"  id="description" placeholder="Enter department description" rows="5" cols="63"></textarea> 
+                </div>
+                
+                <div id="button">
+                    <button  type="submit" id="sub">Add</button>
+                    <button type="submit" id="edit" class="hide" onclick="myfunction3()">Edit</button>     
+                </div>
+            </div> 
+      </form>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="departmentscript.js"></script>
+</body>
+</html> 

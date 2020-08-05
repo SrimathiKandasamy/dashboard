@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="projectcss.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="main">
+    <h2>Project Details</h2>
+    <div class="project" id="project">
+        <table class="list" id="projectList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Max resources</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id="response">
+            </tbody>
+        </table>
+        <button onclick="myfunction1()"  id="addProjectPopup">
+        <img src="add-user.png" width=20 height=20> Add project</button>
+        <form  id="form" value="0" class="modal-content" autocomplete="off"> 
+            <img src="admin.png" width=90 height=90>       
+            <div class="container"> 
+                <div>
+                    <label>NAME:</label><span class="required">*</span><br>
+                    <input type="text" size=40 name="name"  id="name" placeholder="Enter project name" pattern="[A-Z- 
+                    a-z]{5,30}" title="enter min 5 or max 30 characters"  autofocus="autofocus" >
+                    </div>
+                    <div>
+                    <label>DESCRIPTION:</label><span class="required">*</span>
+                    <textarea class="descrip" name="description"  id="description" placeholder="Enter project description" rows="5" cols="63"></textarea> 
+                </div>
+                <div>
+                    <label>MAXIMUM RESOURCES:</label><span class="required">*</span><br>
+                    <input type="number" size=40 name="resources"  id="proj" placeholder="Enter maximum resources"  title="enter numerical values" >
+                </div>
+                <div id="button">
+                    <button  type="submit" id="sub">Add</button>
+                    <button type="submit" id="edit" class="hide" onclick="myfunction3()">Edit</button>     
+                </div>
+            </div> 
+      </form>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="projectscript.js"></script>
+</body>
+</html> 
